@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Primary colors-->
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#E91E63</color>
+
+    <!--redo search overlay color-->
+    <color name="color_mapOverlay">#aa03A9F4</color>
+
+    <!--Background colors-->
+    <color name="color_premium_background">#03A9F4</color>
+    <color name="color_list_background">#f1f1f1</color>
+    <color name="color_card_background">#ffffffff</color>
+    <color name="colorPhotosOverlay">#aa212121</color>
+
+    <!--Text/icon colors-->
+    <color name="colorWhiteBackground">#fff</color>
+    <color name="colorWhite">#F7f7f7</color>
+    <color name="colorSecondaryTextWhite">#7fffffff</color>
+    <color name="colorText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+
+    <!--Divider line color-->
+    <color name="colorDivider">#e1e1e1</color>
+
+    <!--Ripple colors-->
+    <color name="colorRipple">#212121</color>
+
+    <!--facebook colors-->
+    <color name="facebook_color">#3b5998</color>
+
+
+</resources>

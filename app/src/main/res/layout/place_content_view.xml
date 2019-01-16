@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:MaterialRippleLayout="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_card_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/price_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorAccent"
+
+                    android:textDirection="locale"
+                    android:textSize="34sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/price_suffix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/view_deal_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/view_deal_button"
+                android:textColor="@color/colorWhite"
+                app:backgroundTint="@color/colorAccent" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+    <!--description__________________________________________________________-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+
+            <WebView
+                android:id="@+id/descriptionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            ads:adSize="300x250"
+            ads:adUnitId="@string/native_ad" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorDivider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/phoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/phoneTitleView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/place_telephone"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <com.mikepenz.iconics.view.IconicsTextView
+                        android:id="@+id/phoneView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="start"
+                        android:lineSpacingExtra="5dp"
+                        android:text=""
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorText"
+                        android:textDirection="locale"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:id="@+id/phoneButton"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="{faw-phone}"
+                    android:textColor="@color/accent"
+                    android:textDirection="locale"
+                    android:textSize="24sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/emailTitleView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/place_email"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <com.mikepenz.iconics.view.IconicsTextView
+                        android:id="@+id/emailView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="start"
+                        android:lineSpacingExtra="5dp"
+                        android:text=""
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorText"
+                        android:textDirection="locale"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:id="@+id/emailButton"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="{faw-envelope-o}"
+                    android:textColor="@color/accent"
+                    android:textDirection="locale"
+                    android:textSize="24sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/addressTitleView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/place_address"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <com.mikepenz.iconics.view.IconicsTextView
+                        android:id="@+id/addressView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginRight="56dp"
+                        android:layout_marginEnd="56dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="start"
+                        android:lineSpacingExtra="5dp"
+                        android:text=""
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorText"
+                        android:textDirection="locale"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:id="@+id/addressButton"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="{faw-map-marker}"
+                    android:textColor="@color/accent"
+                    android:textDirection="locale"
+                    android:textSize="24sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                map:cameraBearing="112.5"
+                map:cameraTargetLat="-33.796923"
+                map:cameraTargetLng="150.922433"
+                map:cameraTilt="30"
+                map:cameraZoom="13"
+                map:mapType="normal"
+                map:uiCompass="false"
+                map:uiRotateGestures="true"
+                map:uiScrollGestures="false"
+                map:uiTiltGestures="true"
+                map:uiZoomControls="false"
+                map:uiZoomGestures="true" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/review_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/star_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/my_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/reviews_my_review_hint"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="200"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <TextView
+            android:id="@+id/review_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="@string/reviews_submit"
+            android:textAllCaps="true"
+            android:textColor="@color/accent"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider" />
+
+        <TextView
+            android:id="@+id/reviews_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="@string/reviews_title"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="14sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+
+        <TextView
+            android:id="@+id/load_more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="@string/reviews_load_more"
+            android:textColor="@color/accent"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

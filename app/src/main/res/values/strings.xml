@@ -1,0 +1,194 @@
+<resources>
+
+    <!--
+    /**
+     * I have put a lot of effort to ensure that everything is working fine. If you find any problem
+     * feel free to contact me via the Codecanyon item's comment section or send me a personal
+     * message from here: https://codecanyon.net/user/neurondigital?ref=neurondigital#contact
+     *
+     * Thanks for buying this Template!
+     * Check out my other products on CodeCanyon: http://codecanyon.net/user/neurondigital/portfolio?ref=neurondigital
+     */
+    -->
+
+    <!-- General -->
+    <string name="app_name">Ngelong</string>
+    <string name="currency">Rp</string>
+
+
+    <!-- Navigation Drawer -->
+    <string name="nav_all_places">Semua Tempat</string>
+    <string name="nav_news">Blog</string>
+    <string name="nav_bookmarks">Tempat Favorite</string>
+    <string name="nav_categories">Kategori</string>
+    <string name="nav_info">Info</string>
+    <string name="nav_go_premium">Go Premium</string>
+    <string name="nav_settings">Pengaturan</string>
+    <string name="nav_categories_more">Lainya</string>
+    <string name="nav_logout">Keluar</string>
+
+
+    <!-- Profile -->
+    <string name="profile_title">Profil Saya</string>
+    <string name="profile_password_confirm">Konfirmasi Password</string>
+    <string name="profile_change_password">Ubah Password</string>
+    <string name="profile_change_username">Ubah Username</string>
+    <string name="profile_save_button">Simpan Perubahan</string>
+
+
+    <!-- Search -->
+    <string name="search">Cari</string>
+
+
+    <!-- Comments screen -->
+    <string name="comments">Komentar</string>
+    <string name="action_comment">Komentar</string>
+    <string name="action_refresh">Refresh</string>
+
+
+    <!-- Categories screen -->
+    <string name="categories_page_title">Kategori</string>
+
+
+    <!-- List Screen -->
+    <string name="menu_list">List View</string>
+    <string name="menu_map">Map View</string>
+    <string name="menu_current_location">Lokasi Sekarang</string>
+    <string name="menu_sort_recent">Recent</string>
+    <string name="menu_sort_rating">Best Rated</string>
+    <string name="menu_sort_distance">Nearest</string>
+
+
+    <!-- Map Screen -->
+    <string name="map_redo_search">Redo Search in Area</string>
+
+
+    <!-- Bookmark Screen -->
+    <string name="Bookmark_page_title">Bookmarked</string>
+    <string name="Bookmark">Bookmark</string>
+    <string name="empty">No Items</string>
+
+
+    <!-- Places -->
+    <string name="share_icon_title">Share</string>
+    <string name="view_deal_button">View Deal</string>
+    <string name="reviews_title">Reviews</string>
+    <string name="reviews_load_more">Load More</string>
+    <string name="reviews_my_review_hint">Give your Review</string>
+    <string name="reviews_fa_star">&#xf005;</string>
+    <string name="reviews_fa_star_o">&#xf006;</string>
+    <string name="reviews_submit">SUBMIT</string>
+    <string name="place_email">Email</string>
+    <string name="place_address">Location</string>
+    <string name="place_telephone">Phone</string>
+    <string name="place_featured">Trending</string>
+    <string name="place_card_ratings">RATINGS</string>
+
+    <!-- News/Blog -->
+    <string name="back">Back</string>
+    <string name="news">Blog</string>
+    <string name="photos_count"> {faw-camera} %1$s photos</string>
+
+
+    <!-- Login splash screen Screen -->
+    <string name="login_title">Login</string>
+    <string name="login_or">OR</string>
+    <string name="login_skip"></string>
+    <string name="login_register">Buat Akun</string>
+    <string name="login_button">Login</string>
+    <string name="facebook_login_button">Login dengan Facebook</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="register_username">Username</string>
+    <string name="register_title">Akun Baru</string>
+    <string name="register_button">Buat</string>
+
+
+    <!-- Info Screen -->
+    <string name="info_page_title">Info</string>
+
+
+    <!-- Premium screen -->
+    <string name="premium_title">Go Premium</string>
+    <string name="premium_purchase">  GO PREMIUM  </string>
+    <string name="premium_noads">No Ads</string>
+
+
+    <!-- settings screen -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="pref_enable_push_notifications_title">General Notifications</string>
+    <string name="pref_enable_push_notifications_summery">Receive notifications for general news.</string>
+
+
+    <!-- preference save key (to save bookmarks in user phone) -->
+    <string name="save_preference_name">ngelong_app</string>
+
+
+    <!-- Pretty Time -->
+    <string name="date_util_unit_second">sec</string>
+    <string name="date_util_unit_seconds">sec</string>
+    <string name="date_util_unit_minute">min</string>
+    <string name="date_util_unit_minutes">mins</string>
+    <string name="date_util_suffix">ago</string>
+
+
+    <!-- Internet error -->
+    <string name="no_internet_error_title">Tidak Ada Akses Internet</string>
+    <string name="no_internet_error">Tidak ada koneksi internet. tolong hidupkan wifi/paket data anda </string>
+
+    <!--  error -->
+    <string name="error_title">Error</string>
+
+
+    <!--SHARE-->
+    <string name="share_message">Check out this Place:</string>
+
+
+    <!--RATE-->
+    <!-- link is created automatically from package. Make sure package id is the same as the one used in google play -->
+    <string name="unable_to_reach_market">Error reaching market. Please check your internet connection</string>
+    <integer name="rate_shows_after_X_starts">5</integer>
+    <string name="rate_title">Please Rate us</string>
+    <string name="rate_text">If you like the app, feel free to leave a good rating.</string>
+
+
+    <!-- Alert -->
+    <string name="Alert_accept">OK</string>
+    <string name="Alert_cancel">Cancel</string>
+
+
+    <!--Place owner email-->
+    <string name="email_no_email">There are no email clients installed.</string>
+    <string name="email_send_email">Send email...</string>
+
+
+    <!-- Admob ad unit ids - Get yours from Admob: https://www.google.com/admob/-->
+    <string name="interstitial_ad"></string>
+    <integer name="ad_shows_after_X_clicks">5</integer>
+    <string name="banner_ad"></string>
+    <string name="native_ad"></string>
+
+    <!--Google Maps Key - get your key from here: https://developers.google.com/maps/documentation/javascript/get-api-key-->
+    <string name="GoogleMapKey">AIzaSyDBN6XT9RsrdlkBFflA8gdHcrZh3JAhjsI</string>
+
+    <!--Google Analytics id - Get yours from Google Analytics: https://analytics.google.com/analytics/web/-->
+    <string name="google_analytics_id"></string>
+
+
+    <!--Deep Link Sharing url - This url does 2 features:-->
+    <!--1) It is the link shared when the share button is pressed, along with the place id-->
+    <!--2) The app will listen for this url, so when it is opened the app will open.-->
+    <string name="deep_link">http://sholatdulu.com/ngelong_server/</string>
+
+
+    <!--Facebook App IDs - Create a facebook app from here: https://developers.facebook.com/apps/-->
+    <!--Facebook App ID - eg: 2545454566987555-->
+  <!--  <string name="facebook_app_id">xxxxxxxxxxxxxxx</string>
+    &lt;!&ndash;Facebook fb+ID- eg: fb2545454566987555&ndash;&gt;
+    <string name="fb_login_protocol_scheme">fbxxxxxxxxxxxxxx</string>
+-->
+    <string name="facebook_app_id">1675556035870653</string>
+    <string name="fb_login_protocol_scheme">fb1675556035870653</string>
+
+
+</resources>

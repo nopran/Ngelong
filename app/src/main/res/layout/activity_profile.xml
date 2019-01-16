@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:IconicsImageView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteBackground"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:text="@string/profile_change_username"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp" />
+
+
+        <!-- Username ___________________________________________________________________________-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/username_input_layout"
+                android:layout_width="48dp"
+                android:layout_height="56dp">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    app:iiv_color="@color/colorSecondaryText"
+                    app:iiv_icon="faw-user"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/username_input_layout"
+                android:layout_toEndOf="@+id/username_input_layout"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:textDirection="locale"
+                        android:layout_marginTop="0dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/register_username"
+                        android:inputType="textCapWords"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        android:textColor="?android:attr/textColorPrimary" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:text="@string/profile_change_password"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp" />
+
+        <!-- Password ___________________________________________________________________________-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/password_input_layout"
+                android:layout_width="48dp"
+                android:layout_height="56dp">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    app:iiv_color="@color/colorSecondaryText"
+                    app:iiv_icon="faw-key" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@+id/password_input_layout"
+                android:layout_toEndOf="@+id/password_input_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="0dp"
+                        android:textDirection="locale"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/login_password"
+                        android:inputType="textPassword"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        android:textColor="?android:attr/textColorPrimary" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Confirm password ___________________________________________________________________________-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/confirm_password_input_layout"
+                android:layout_width="48dp"
+                android:layout_height="56dp">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    app:iiv_color="@color/colorSecondaryText"
+                    app:iiv_icon="faw-check" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@+id/confirm_password_input_layout"
+                android:layout_toEndOf="@+id/confirm_password_input_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:textDirection="locale"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/profile_password_confirm"
+                        android:inputType="textPassword"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        android:textColor="?android:attr/textColorPrimary" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/profile_save_button"
+        android:textColor="@color/colorWhite"
+        app:backgroundTint="@color/colorAccent" />
+
+</LinearLayout>

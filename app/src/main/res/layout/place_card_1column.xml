@@ -1,0 +1,150 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.gmitmedia.helpers.AspectRatioImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="0dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/featured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/accent"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/place_featured"
+                    android:textDirection="locale"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/gradient_bg"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorAccent"
+                    android:textDirection="locale"
+                    android:textSize="45sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/price_suffix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_card_background"
+            android:gravity="start"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="16dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorText"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikepenz.iconics.view.IconicsTextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_card_background"
+                android:gravity="start"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/accent"
+                android:textDirection="locale"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_card_background"
+                android:gravity="start"
+                android:paddingBottom="4dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorSecondaryText"
+                android:textDirection="locale"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_card_background"
+            android:gravity="start"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorText"
+            android:textDirection="locale"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

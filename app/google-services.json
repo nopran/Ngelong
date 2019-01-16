@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "939994656263",
+    "firebase_url": "https://ngelong-2c292.firebaseio.com",
+    "project_id": "ngelong-2c292",
+    "storage_bucket": "ngelong-2c292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939994656263:android:74e088053dd4f9a6",
+        "android_client_info": {
+          "package_name": "com.gmitmedia.ngelong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939994656263-9dihqcrl8s29oo5c9q2csdtbfgatqkq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDQwctOe8X5T-eOwsijp_QPXQhOPi58LA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

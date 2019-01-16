@@ -1,0 +1,85 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:iconics="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <FrameLayout
+            android:id="@+id/imageview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.gmitmedia.helpers.AspectRatioImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="0dp"
+                android:scaleType="fitXY" />
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/video"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="8dp"
+                iconics:iiv_color="@color/md_white_1000"
+                iconics:iiv_icon="faw-video-camera" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/submission_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_card_background"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="16dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorSecondaryText"
+                android:textDirection="locale"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_card_background"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="5"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorText"
+                android:textDirection="locale"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

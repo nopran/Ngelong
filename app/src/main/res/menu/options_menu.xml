@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        app:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/map"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="@string/menu_map"
+        app:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:id="@+id/sort"
+        android:title="Sort"
+        app:showAsAction="collapseActionView|ifRoom" >
+        <menu>
+            <item
+                android:id="@+id/sort_recent"
+                android:title="@string/menu_sort_recent" />
+            <item
+                android:id="@+id/sort_rating"
+                android:title="@string/menu_sort_rating" />
+            <item
+                android:id="@+id/sort_distance"
+                android:title="@string/menu_sort_distance" />
+        </menu>
+    </item>
+</menu>
